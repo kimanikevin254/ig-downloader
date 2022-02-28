@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IG Downloader</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <div class="cont">
+      <h1>IG Downloader</h1>
+      <form action="/download" method="post">
+          <div>
+            <label for="">Link:</label>
+            <input type="text" name="link" id="">
+          </div>
+
+         <div>
+          <label for="">Save as (filename):</label>
+          <input type="text" name="flnm" id="">
+         </div>
+
+          <div class="radios">
+            <div>            
+              <input type="radio" name="options" id="option1" value="image"> Image </input>
+            </div>
+
+            <div>
+              <input type="radio" name="options" id="option2" value="video"> Video </input>
+            </div>
+          </div>
+
+          <button type="submit">Download</button>
+
+          {{ message }}
+      </form>
+    </div>
+  </body>
+</html>
