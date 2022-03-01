@@ -66,6 +66,6 @@ def download():
 
         driver.close()
 
-    return redirect("/", message="Download complete")
+    return redirect("/")
 
 app.run(debug = True) 
